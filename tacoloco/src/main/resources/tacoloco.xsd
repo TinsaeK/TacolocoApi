@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.tacoloco.com/tacoloco"
+        xmlns:tns="http://www.tacoloco.com/tacoloco"
+        elementFormDefault="qualified">
+    
+    <xsd:element name="OrderRequest">
+        <xsd:complexType>
+  			<xsd:sequence>
+  				<xsd:element name="veggieTaco" type="xsd:int" />
+                <xsd:element name="chickenOrBeefTaco" type="xsd:int" />
+                <xsd:element name="chorizoTaco" type="xsd:int" />
+  			</xsd:sequence> 
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="OrderCheck">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="getDiscount" type="xsd:boolean" />
+                <xsd:element name="totalCost" type="xsd:decimal" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>
